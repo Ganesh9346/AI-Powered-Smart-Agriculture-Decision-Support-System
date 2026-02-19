@@ -1,11 +1,16 @@
-🌱 Smart Agriculture AI Web Application
+🌱 AI-Powered Smart Agriculture Decision Support System
 
-An AI-powered web application that helps farmers and agricultural planners make data-driven decisions by recommending the best crop based on soil conditions, detecting plant leaf diseases from images, and estimating farming profit.
+An intelligent agriculture assistant that helps farmers and researchers with:
 
-🚀 Features
+✅ Crop Recommendation
+✅ Leaf Disease Detection
+✅ Profit Analysis
+
+Built using Deep Learning + Gradio + TensorFlow
+📌 Features
 🌾 Crop Recommendation
 
-Predicts the most suitable crop based on:
+Predicts the best crop based on:
 
 Nitrogen (N)
 
@@ -17,49 +22,79 @@ Temperature
 
 Humidity
 
-Soil pH
+pH
 
 Rainfall
 
-Built using an Artificial Neural Network (ANN)
+Uses trained ANN model
 
 🌿 Leaf Disease Detection
 
-Upload a plant leaf image
+Upload plant leaf image
 
-Detects disease using a Convolutional Neural Network (CNN)
+Detects disease using CNN (MobileNetV2)
 
-Displays:
+Provides:
 
-Predicted disease name
+Disease name
 
 Confidence score
 
-Suggestion to overcome the disease
+Treatment suggestion
 
-💰 Profit Estimation
+💰 Profit Calculator
 
 Calculates:
 
-Total production
+Total yield
 
 Revenue
 
 Net profit
 
-Profit per acre
+Profit margin
 
-Helps farmers in financial planning
+🧠 Models Used
+🔹 Crop Recommendation Model
 
-🎨 Interactive Web Interface
+Algorithm: Artificial Neural Network (ANN)
 
-Built using Gradio
+Input features:
 
-Real-time predictions
+N, P, K, temperature, humidity, pH, rainfall
 
-User-friendly design
+Output: Best crop label
 
-🧠 Tech Stack
+🔹 Leaf Disease Detection Model
+
+Base model: MobileNetV2 (Transfer Learning)
+
+Image size: 128 × 128
+
+Output: Disease class
+
+🗂️ Project Structure
+├── app.py
+├── crop_ann_model.keras
+├── leaf_disease_cnn_model.keras
+├── label_encoder.pkl
+├── leaf_classes.json
+├── crop_recommendation.csv
+├── requirements.txt
+└── README.md
+
+⚙️ Installation & Run Locally
+1️⃣ Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+2️⃣ Install dependencies
+pip install -r requirements.txt
+
+3️⃣ Run the application
+python app.py
+
+🖥️ Tech Stack
 
 Python
 
@@ -67,47 +102,49 @@ TensorFlow / Keras
 
 Scikit-learn
 
-CNN (Image Classification)
+Gradio
 
-ANN (Crop Prediction)
+NumPy
 
-📊 Machine Learning Workflow
+PIL
 
-Data preprocessing
+📊 Dataset
+Crop Recommendation Dataset
 
-Model training (ANN & CNN)
+Soil nutrients
 
-Model evaluation
+Weather conditions
 
-Model saving
+Crop labels
 
-Model loading for inference
+Leaf Disease Dataset
 
-Real-time prediction using Gradio
+PlantVillage dataset
 
-🌍 Real-World Impact
+Multiple crop leaf disease classes
+
+🎯 Use Case
 
 This system helps:
 
-Farmers choose the right crop
+👨‍🌾 Farmers → choose best crop & detect diseases
+🏫 Students → learn AI in agriculture
+🔬 Researchers → build smart farming solutions
+🌍 Future Improvements
 
-Detect plant diseases early
+Fertilizer recommendation
 
-Reduce financial risk
+Soil health analysis
 
-Improve productivity
+Multi-language support
 
-🔮 Future Enhancements
+Mobile friendly UI
 
-🌦 Weather API integration
+👨‍💻 Author
 
-🧪 Fertilizer recommendation system
+Ganesh
+AI & Data Science Enthusiast
 
-📈 ROI & break-even analysis
+GitHub:
+https://github.com/Ganesh9346
 
-🌐 Cloud deployment
-
-📱 Mobile responsive UI
-Gradio (Web UI)
-
-NumPy / Pandas
